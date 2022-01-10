@@ -11,6 +11,19 @@ document.body.style.alignItems = "center";
 document.body.style.height = "100vh";
 document.body.style.fontFamily = "Roboto, sans-serif";
 
+// CREATE
+const form = document.createElement("form");
+const formHeader = document.createElement("h3");
+
+//ATTR
+form.setAttribute("class", "form");
+
+// CSS STYLE
+
+//TEXT CONTENT
+
+//ADD
+
 
 const contacts = [];
 
@@ -50,6 +63,14 @@ elForm.addEventListener("submit", function (ev) {
           resultNumNum.setAttribute("class", "result__num-num");
 
           // CSS STYLE
+          // FORM
+          form.document.style.width = "400px";
+          form.document.style.height = "500px";
+          form.document.style.padding = "30px";
+          form.document.style.borderRadius = "20px";
+          form.document.style.backgroundColor = "#fff";
+
+          // FORM__ITEM
           resultItem.style.borderRadius = "20px";
           resultItem.style.padding = "20px";
           resultItem.style.marginBottom = "15px";
@@ -65,7 +86,6 @@ elForm.addEventListener("submit", function (ev) {
 
 
           //ADD
-
           resultList.appendChild(resultItem);
           resultItem.appendChild(resultTitle);
           resultItem.appendChild(resultNumDesc);
