@@ -4,6 +4,8 @@ let elInputRelati = document.querySelector(".form__input-relate");
 let elInputNum = document.querySelector(".form__input-number");
 let resultList = document.querySelector(".result__num");
 
+document.body.style.background = "linear-gradient(320deg, #00d1dd  0%, #4ba3dd 70%)"
+
 const contacts = [];
 
 elForm.addEventListener("submit", function (ev) {

@@ -1,4 +1,8 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -9,9 +13,196 @@ body {
      justify-content: center;
      align-items: center;
      height: 100vh;
-     font-family: sans-serif;
+     font-family: 'Roboto', sans-serif;
 }
 
-.con__box {
+.contact__box {
      display: flex;
+     border-radius: 21px;
+     background-color: #fff;
+     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+/* ==FORM== */
+.form {
+     width: 400px;
+     height: 500px;
+     padding: 30px;
+     border-radius: 20px;
+     background-color: #fff;
+}
+
+.form__header {
+     margin-bottom: 35px;
+     font-size: 25px;
+     text-align: center;
+}
+
+.form__div {
+     position: relative;
+     height: 48px;
+     margin-bottom: 20px;
+}
+
+input {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding: 15px;
+     font-size: 18px;
+     outline: none;
+     background: none;
+     border-radius: 15px;
+     border: 1px solid rgb(199, 191, 191);
+     z-index: 1;
+}
+
+.form__label {
+     position: absolute;
+     top: 15px;
+     left: 15px;
+     padding: 0px 2px;
+     font-size: 16px;
+     color: rgb(199, 191, 191);
+     background-color: #fff;
+     transition: .3s;
+}
+
+input:focus {
+     border: 1px solid dodgerblue;
+}
+
+input:focus+.form__label {
+     top: -8px;
+     left: 15px;
+     color: dodgerblue;
+     font-size: 14px;
+     font-weight: 500;
+     z-index: 10;
+}
+
+input:focus~.fomr__label,
+input:not(:placeholder-shown)~.form__label {
+     top: -8px;
+     left: 15px;
+     font-size: 14px;
+     font-weight: 500;
+     z-index: 10;
+}
+
+.form__button {
+     display: inline-block;
+     padding: 10px 20px;
+     font-weight: 600;
+     color: #fff;
+     cursor: pointer;
+     border: none;
+     border-radius: 10px;
+     background-color: dodgerblue;
+     transition: .3s;
+}
+
+.form__button:hover {
+     opacity: 0.8;
+}
+
+.form__button:active {
+     opacity: 0.6;
+}
+
+/* ==RESULT== */
+.result {
+     width: 400px;
+     height: 500px;
+     padding: 30px;
+     border-radius: 20px;
+     background-color: dodgerblue;
+     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.result__header {
+     margin-bottom: 30px;
+     font-size: 25px;
+     color: #fff;
+     text-align: center;
+}
+
+.result__num {
+     height: 370px;
+     border-radius: 20px;
+     overflow: auto;
+}
+
+.result__num {
+     overflow: auto;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+
+.result__num::-webkit-scrollbar {
+     width: 0;
+     height: 0;
+}
+
+.result__num-item {
+     padding: 20px;
+     margin-bottom: 15px;
+     border-radius: 20px;
+     background-color: #fff;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.result__num-header {
+     position: relative;
+     color: rgb(105, 100, 100);
+     margin-bottom: 15px;
+     margin-left: 25px;
+}
+
+.result__num-header::before {
+     position: absolute;
+     top: -1px;
+     left: -30px;
+     content: "";
+     width: 25px;
+     height: 25px;
+     background-image: url("../img/icons8-user-32.png");
+     background-size: cover;
+}
+
+.result__num-desc {
+     position: relative;
+     color: rgb(105, 100, 100);
+     margin-bottom: 15px;
+     margin-left: 25px;
+}
+
+.result__num-desc::before {
+     position: absolute;
+     top: -3px;
+     left: -31px;
+     content: "";
+     width: 25px;
+     height: 25px;
+     background-image: url("../img/icons8-couple-skin-type-1-48.png");
+     background-size: cover;
+}
+
+.result__num-num {
+     position: relative;
+     margin-left: 25px;
+     color: rgba(63, 157, 252, 0.849);
+}
+
+.result__num-num::before {
+     position: absolute;
+     top: -3px;
+     left: -30px;
+     content: "";
+     width: 25px;
+     height: 25px;
+     background-image: url("../img/icons8-phone-32.png");
+     background-size: cover;
 }

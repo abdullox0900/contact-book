@@ -11,33 +11,36 @@
 
 <body>
 
-     <section class="con">
-          <div class="container">
-               <h1 class="con__header">Contact book</h1>
-               <div class="con__box">
-                    <form class="form">
-                         <h3>New contact form</h3>
-                         <div>
-                              <input type="text" class="form__input" placeholder="Name">
+     <section class="contact">
+          <div class="contact__box">
+               <form class="form">
+                    <h3 class="form__header">New contact form</h3>
+                    <div>
+                         <div class="form__div">
+                              <input type="text" class="form__input" placeholder=" " autocomplete="off" required>
+                              <label class="form__label">Name</label>
                          </div>
-                         <div>
-                              <input type="text" class="form__input-relate" placeholder="Relationship">
-                         </div>
-                         <div>
-                              <input type="number" class="form__input-number" placeholder="Phone">
-                         </div>
-                         <button class="button">Add contact</button>
-                    </form>
-                    <div class="result">
-                         <h3 class="result__header">Contacts</h3>
-                         <ul class="result__num">
-                              <li class="result__num-item">
-                                   <h3 class="result__num-header">Lorem</h3>
-                                   <p class="result__num-desc">Lorem ipsum dolor sit amet.</p>
-                                   <p class="result__num-num">+998</p>
-                              </li>
-                         </ul>
                     </div>
+                    <div>
+                         <div class="form__div">
+                              <input type="text" class="form__input-relate" placeholder=" " autocomplete="off" required>
+                              <label class="form__label">Relationship</label>
+                         </div>
+                    </div>
+                    <div>
+                         <div class="form__div">
+                              <input type="number" class="form__input-number" placeholder=" " autocomplete="off"
+                                   required>
+                              <label class="form__label">Phone</label>
+                         </div>
+                    </div>
+                    <button class="form__button">Add contact</button>
+               </form>
+               <div class="result">
+                    <h3 class="result__header">Contacts</h3>
+                    <ul class="result__num">
+
+                    </ul>
                </div>
           </div>
      </section>
