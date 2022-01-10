@@ -4,7 +4,7 @@ let elInputRelati = document.querySelector(".form__input-relate");
 let elInputNum = document.querySelector(".form__input-number");
 let resultList = document.querySelector(".result__num");
 
-document.body.style.background = "linear-gradient(320deg, #00d1dd  0%, #4ba3dd 70%)"
+document.body.style.background = "linear-gradient(320deg, #00d1dd  0%, #4ba3dd 70%)";
 document.body.style.display = "flex";
 document.body.style.justifyContent = "center";
 document.body.style.alignItems = "center";
@@ -46,8 +46,6 @@ elForm.addEventListener("submit", function (ev) {
 
      contacts.push(contact)
      resultList.innerHTML = null;
-
-     console.log(contacts);
 
      for (item of contacts) {
           elInput.value = null
