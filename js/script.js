@@ -13,6 +13,8 @@ document.body.style.fontFamily = "Roboto, sans-serif";
 
 const contactBox = document.querySelector(".contact__box");
 const formHeader = document.querySelector(".form__header");
+const newResult = document.querySelector(".result");
+const newResultHeader = document.querySelector(".result__header");
 
 contactBox.style.display = "flex";
 contactBox.style.borderRadius = "20px";
@@ -28,6 +30,18 @@ elForm.style.backgroundColor = "#fff";
 formHeader.style.marginBottom = "35px";
 formHeader.style.fontSize = "25px";
 formHeader.style.textAlign = "center";
+
+newResult.style.width = "400px";
+newResult.style.height = "500px";
+newResult.style.padding = "30px";
+newResult.style.borderRadius = "20px";
+newResult.style.backgroundColor = "dodgerblue";
+newResult.style.boxShadow = "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+
+newResultHeader.style.marginBottom = "30px";
+newResultHeader.style.fontSize = "25px";
+newResultHeader.style.color = "#fff";
+newResultHeader.style.textAlign = "center"
 
 const contacts = [];
 

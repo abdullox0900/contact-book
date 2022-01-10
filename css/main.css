@@ -85,21 +85,6 @@ input:not(:placeholder-shown)~.form__label {
 }
 
 /* ==RESULT== */
-.result {
-     width: 400px;
-     height: 500px;
-     padding: 30px;
-     border-radius: 20px;
-     background-color: dodgerblue;
-     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-.result__header {
-     margin-bottom: 30px;
-     font-size: 25px;
-     color: #fff;
-     text-align: center;
-}
 
 .result__num {
      height: 370px;
