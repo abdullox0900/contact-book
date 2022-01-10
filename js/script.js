@@ -11,19 +11,23 @@ document.body.style.alignItems = "center";
 document.body.style.height = "100vh";
 document.body.style.fontFamily = "Roboto, sans-serif";
 
-// CREATE
-const form = document.createElement("form");
-const formHeader = document.createElement("h3");
+const contactBox = document.querySelector(".contact__box");
+const formHeader = document.querySelector(".form__header");
 
-//ATTR
-form.setAttribute("class", "form");
+contactBox.style.display = "flex";
+contactBox.style.borderRadius = "20px";
+contactBox.style.backgroundColor = "#fff";
+contactBox.style.boxShadow = "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
 
-// CSS STYLE
+elForm.style.width = "400px";
+elForm.style.height = "500px";
+elForm.style.padding = "30px";
+elForm.style.borderRadius = "20px";
+elForm.style.backgroundColor = "#fff";
 
-//TEXT CONTENT
-
-//ADD
-
+formHeader.style.marginBottom = "35px";
+formHeader.style.fontSize = "25px";
+formHeader.style.textAlign = "center";
 
 const contacts = [];
 
@@ -63,27 +67,17 @@ elForm.addEventListener("submit", function (ev) {
           resultNumNum.setAttribute("class", "result__num-num");
 
           // CSS STYLE
-          // FORM
-          form.document.style.width = "400px";
-          form.document.style.height = "500px";
-          form.document.style.padding = "30px";
-          form.document.style.borderRadius = "20px";
-          form.document.style.backgroundColor = "#fff";
-
           // FORM__ITEM
           resultItem.style.borderRadius = "20px";
           resultItem.style.padding = "20px";
           resultItem.style.marginBottom = "15px";
           resultItem.style.backgroundColor = "#fff"
-          resultItem.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;"
-
-
+          resultItem.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px";
 
           //TEXT CONTENT
           resultTitle.textContent = item.name;
           resultNumDesc.textContent = item.relationship;
           resultNumNum.textContent = item.phone;
-
 
           //ADD
           resultList.appendChild(resultItem);
