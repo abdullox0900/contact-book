@@ -8,13 +8,6 @@
      box-sizing: border-box;
 }
 
-body {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     font-family: 'Roboto', sans-serif;
-}
 
 .contact__box {
      display: flex;
@@ -144,14 +137,6 @@ input:not(:placeholder-shown)~.form__label {
 .result__num::-webkit-scrollbar {
      width: 0;
      height: 0;
-}
-
-.result__num-item {
-     padding: 20px;
-     margin-bottom: 15px;
-     border-radius: 20px;
-     background-color: #fff;
-     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .result__num-header {

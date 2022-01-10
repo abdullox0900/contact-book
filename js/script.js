@@ -5,6 +5,12 @@ let elInputNum = document.querySelector(".form__input-number");
 let resultList = document.querySelector(".result__num");
 
 document.body.style.background = "linear-gradient(320deg, #00d1dd  0%, #4ba3dd 70%)"
+document.body.style.display = "flex";
+document.body.style.justifyContent = "center";
+document.body.style.alignItems = "center";
+document.body.style.height = "100vh";
+document.body.style.fontFamily = "Roboto, sans-serif";
+
 
 const contacts = [];
 
@@ -38,16 +44,25 @@ elForm.addEventListener("submit", function (ev) {
           const resultNumNum = document.createElement("p");
 
           //ATTR
-
           resultItem.setAttribute("class", "result__num-item");
           resultTitle.setAttribute("class", "result__num-header");
           resultNumDesc.setAttribute("class", "result__num-desc");
           resultNumNum.setAttribute("class", "result__num-num");
 
+          // CSS STYLE
+          resultItem.style.borderRadius = "20px";
+          resultItem.style.padding = "20px";
+          resultItem.style.marginBottom = "15px";
+          resultItem.style.backgroundColor = "#fff"
+          resultItem.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;"
+
+
+
           //TEXT CONTENT
           resultTitle.textContent = item.name;
           resultNumDesc.textContent = item.relationship;
           resultNumNum.textContent = item.phone;
+
 
           //ADD
 
